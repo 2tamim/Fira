@@ -1,0 +1,50 @@
+[
+    {
+        "model":"auth.User",
+        "pk":1,
+        "fields":{
+            "username":"Admin",
+            "first_name":"Admin",
+            "last_name":"Admin",
+            "password":"pbkdf2_sha256$180000$wLCO6RtjdCnP$L1j0hy0H0Un9yfcdvgZBV8CXd+r1TUWP8MDLDfLv28A=",
+            "is_active":true,
+            "is_superuser":true,
+            "is_staff":true
+        }
+    },
+    {
+        "model":"Tadbir3_app.Employee",
+        "pk":1,
+        "fields":{
+            "user_id":"1",
+            "work_title":"Admin"
+        }
+    },
+    {
+        "model":"Tadbir3_app.Task_Type",
+        "pk":1,
+        "fields":{
+            "creator_id":"1",
+            "name":"website",
+            "pubic":true
+        }
+    },
+    {
+        "model":"Tadbir3_app.Task_Level",
+        "pk":1,
+        "fields":{    
+            "name":"Project",
+            "index":100
+        }
+    },
+    {
+        "model":"Tadbir3_app.Organization_Group",
+        "pk":1,
+        "fields":{    
+            "name":"Total Group",
+            "index":100,
+            "manager_id":"1"
+        }
+    }
+]
+
